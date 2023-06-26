@@ -1,0 +1,34 @@
+.container-contact  {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3vh;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    .contact-form-link  {
+        height: 100%;
+        border: 1px solid black;
+        width: 80%;
+        text-align: left;
+        .show-mail-contact  {
+            box-sizing: border-box;
+            border: 1px solid black;
+            strong {
+                margin-bottom: 10px;
+            }
+            .contact-proton-image   {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+                margin-left: 10px;
+                margin-bottom: -10px;
+            }
+        }
+    }
+    .display-contact-option {
+        flex-grow: 1;
+        background-color: purple;
+    }
+}

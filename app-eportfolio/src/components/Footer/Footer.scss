@@ -1,0 +1,54 @@
+.container-footer   {
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 70%;
+    height: 100%;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 100%;
+        width: 30%;
+        .footer-linkedin {
+            margin-right: 2vh;
+            min-width: 50px;
+            min-height: 50px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .footer-instagram {
+            margin-right: 2vh;
+            min-width: 50px;
+            min-height: 50px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .footer-github {
+            margin-right: 2vh;
+            min-width: 50px;
+            min-height: 50px;
+            transition: transform 0.3s ease-in-out;
+        }
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    .footer-citation-text  {
+        justify-content: center;
+        flex-grow: 1;
+        background-color: cyan;
+    }
+
+.footer-social-icons .footer-linkedin:hover,
+.footer-social-icons .footer-instagram:hover,
+.footer-social-icons .footer-github:hover {
+    transform: scale(1.05);
+}
+
+}

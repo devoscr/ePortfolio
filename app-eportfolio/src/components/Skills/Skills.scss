@@ -1,0 +1,28 @@
+.container-skills   {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    .skills-list-text   {
+        box-sizing: border-box;
+        border: 1px solid black;
+        background-color: white;
+        width: 60%;
+        transition: transform 0.3s ease-in-out;
+        p {
+            text-align: center;
+        }
+        h1 {
+            text-align: left;
+        }
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+            width: 80%;
+        }
+    }
+}
+
+.skills-list-text:hover {
+    transform: scale(1.02);
+}
