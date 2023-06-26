@@ -38,7 +38,6 @@
   justify-content: center;
   margin-top: 5vh;
   width: 100%;
-  background-color: lightblue;
   color: black;
 }
 
@@ -55,14 +54,17 @@
   justify-content: center;
   box-sizing: border-box;
   border: 1px solid black;
+
   @media screen and (max-width: 768px) {
     align-items: center;
     flex-direction: column;
   }
   .image-footer-js {
     width: 250px;
+    transition: transform 2s ease-out 100ms;
     height: 200px;
-    margin-right: 2vh;
+    margin-right: 5vh;
+    border-radius: 90%;
     @media screen and (max-width: 768px) {
       margin-right: 0;
       margin-bottom: 1vh;
@@ -71,7 +73,9 @@
   .image-footer-teamwork {
     width: 200px;
     height: 200px;
-    margin-right: 2vh;
+    transition: transform 2s ease-out 100ms;
+    margin-right: 5vh;
+    border-radius: 90%;
     @media screen and (max-width: 768px) {
       margin-right: 0;
       margin-bottom: 1vh;
@@ -80,9 +84,17 @@
   .image-footer-teamflow  {
     width: 250px;
     height: 200px;
+    transition: transform 2s ease-out 100ms;
+    border-radius: 90%;
     @media screen and (max-width: 768px) {
-      margin-right: 0;
-      margin-bottom: 1vh;
+      margin-bottom: 2vh;
     }
   }
+
+  .image-footer-js:hover,
+  .image-footer-teamwork:hover,
+  .image-footer-teamflow:hover   {
+      transform: scale(1.05)
+  }
 }
+
