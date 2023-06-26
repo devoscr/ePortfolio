@@ -45,10 +45,9 @@
         flex-grow: 1;
     }
 
-.footer-social-icons .footer-linkedin:hover,
-.footer-social-icons .footer-instagram:hover,
-.footer-social-icons .footer-github:hover {
-    transform: scale(1.05);
-}
-
+    .footer-social-icons .footer-linkedin:hover,
+    .footer-social-icons .footer-instagram:hover,
+    .footer-social-icons .footer-github:hover {
+        transform: scale(1.05);
+    }
 }

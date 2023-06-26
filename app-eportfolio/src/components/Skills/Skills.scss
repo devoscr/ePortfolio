@@ -1,13 +1,16 @@
 .container-skills   {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     border: 1px solid black;
     box-sizing: border-box;
-    .skills-list-text   {
+    .skills-list-fullstack   {
         box-sizing: border-box;
+        margin-right: 5vh;
         border: 1px solid black;
         background-color: white;
+        margin-bottom: 2vh;
         width: 60%;
         transition: transform 0.3s ease-in-out;
         p {
@@ -15,14 +18,45 @@
         }
         h1 {
             text-align: left;
+            margin-left: 7vh;
+            @media screen and (max-width: 768px) {
+                text-align: center;
+                margin-left: 0;
+            }
         }
         @media screen and (max-width: 768px) {
             justify-content: center;
             width: 80%;
+            margin-right: 0;
+        }
+    }
+    .skills-list-fortytwo {
+        box-sizing: border-box;
+        border: 1px solid black;
+        background-color: white;
+        margin-left: 5vh;
+        width: 60%;
+        transition: transform 0.3s ease-in-out;
+        p {
+            text-align: center;
+        }
+        h1 {
+            margin-left: 7vh;
+            text-align: left;
+            @media screen and (max-width: 768px) {
+                text-align: center;
+                margin-left: 0;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+            width: 80%;
+            margin-left: 0;
         }
     }
 }
 
-.skills-list-text:hover {
+.skills-list-fullstack:hover,
+.skills-list-fortytwo:hover {
     transform: scale(1.02);
 }

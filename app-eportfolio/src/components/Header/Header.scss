@@ -1,4 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Cinzel&family=Cormorant:wght@700&family=Russo+One&display=swap');
+
 .container-header {
     display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     width: 100%;
+    height: 100%;
+    background: #522D8C;
+
+    .header-displayer-text {
+        font-family: 'Inter', sans-serif;
+        color: mix(#E6E6FA, #522D8C, 85%);
+        font-weight: 900;
+        flex-grow: 1;
+        font-size: 5vw;
+        animation: slideInLeft 2s ease-out forwards;
+        text-shadow:
+          -0.0075em 0.0075em 0 mix(#fff, #522D8C, 94%),
+          0.005em 0.005em 0 mix(#fff, purple, 60%),
+          0.01em 0.01em 0 mix(#fff, #522D8C, 62%), 
+          0.015em 0.015em mix(#fff, purple, 64%), 
+          0.02em 0.02em 0 mix(#fff, #522D8C, 66%), 
+          0.025em 0.025em 0 mix(#fff, purple, 68%),
+          0.03em 0.03em 0 mix(#fff, #522D8C, 70%),
+          0.035em 0.035em 0 mix(#fff, purple, 72%);
+        @media screen and (max-width: 768px)  {
+          justify-content: center;
+          font-size: 6vw;
+        }
+    }
+    .header-displayer-img   {
+      min-width: 30%;
+      justify-content: center;
+      transition: transform 0.3s ease-in-out;
+      margin-right: 15vh;
+      @media screen and (max-width: 768px)  {
+        width: 100%;
+        max-height: 400px;
+        margin-top: 0;
+        margin-right: 0;
+      }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-header {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

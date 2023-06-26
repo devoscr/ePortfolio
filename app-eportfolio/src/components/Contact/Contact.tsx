@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 import './Contact.scss'
 
 const   Contact = () => {
@@ -27,13 +28,12 @@ const   Contact = () => {
 
     return (
         <div className='container-contact'>
-            <div className='display-contact-option'>
-            </div>
+            <img className='contact-option-gif-image' src={require('../assets/image.gif')} ></img>
             <div className='contact-form-link'>
                 <h2>Click on icons if you want to connect with me!</h2>
                 <div className='show-mail-contact'>
                     <p>
-                    <img onClick={showProtonMailContact} data-type='proton' className='contact-proton-image' src='https://pic.clubic.com/v1/images/2009112/raw'>
+                    <img onClick={showProtonMailContact} data-type='proton' className='contact-proton-image' src='https://pic.clubic.com/v1/images/2009112/raw' alt='gif'>
                     </img>
                     <strong>
                     {   displayProtonMailContact.length ?
