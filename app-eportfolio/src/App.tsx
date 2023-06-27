@@ -22,9 +22,9 @@ function App() {
         <Contact />
       </div>
       <div className='main-image-footer-wrapper'>
-        <img className='image-footer-js' src='https://static.vecteezy.com/system/resources/previews/002/406/573/non_2x/web-development-at-office-concept-illustration-of-people-characters-in-flat-design-vector.jpg'></img>
-        <img className='image-footer-teamwork' src='https://i.pinimg.com/736x/f2/6a/ab/f26aab0a230d4322cc208dba5663128f.jpg'></img>
-        <img className='image-footer-teamflow' src='https://static.vecteezy.com/system/resources/previews/002/406/578/non_2x/digital-marketing-and-teamwork-at-office-concept-illustration-of-people-characters-in-flat-design-vector.jpg'></img>
+        <img className='image-footer-js' src='https://static.vecteezy.com/system/resources/previews/002/406/573/non_2x/web-development-at-office-concept-illustration-of-people-characters-in-flat-design-vector.jpg' alt='img'></img>
+        <img className='image-footer-teamwork' src='https://i.pinimg.com/736x/f2/6a/ab/f26aab0a230d4322cc208dba5663128f.jpg' alt='img'></img>
+        <img className='image-footer-teamflow' src='https://static.vecteezy.com/system/resources/previews/002/406/578/non_2x/digital-marketing-and-teamwork-at-office-concept-illustration-of-people-characters-in-flat-design-vector.jpg' alt='img'></img>
       </div>
       <div className='footer-wrapper' >
         <Footer />

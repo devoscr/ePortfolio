@@ -5,7 +5,7 @@ const   Profil = () =>  {
     return (
         <div className='container-profil'>
             <div className='profil-img'>
-                <img src='https://media.licdn.com/dms/image/D4E03AQEA_O6dotleNg/profile-displayphoto-shrink_800_800/0/1685891905048?e=1693440000&v=beta&t=rOJjDrdj5mkmI51QKKAA0AMdh9ZFCSFIAqAqezf6vY8' >
+                <img src='https://media.licdn.com/dms/image/D4E03AQEA_O6dotleNg/profile-displayphoto-shrink_800_800/0/1685891905048?e=1693440000&v=beta&t=rOJjDrdj5mkmI51QKKAA0AMdh9ZFCSFIAqAqezf6vY8' alt='img' >
                 </img>
             </div>
             <div className='profil-text' >

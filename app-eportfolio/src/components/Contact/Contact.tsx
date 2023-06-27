@@ -28,12 +28,12 @@ const   Contact = () => {
 
     return (
         <div className='container-contact'>
-            <img className='contact-option-gif-image' src={require('../assets/image.gif')} ></img>
+            <img className='contact-option-gif-image' src={require('../assets/image.gif')} alt='gif'></img>
             <div className='contact-form-link'>
                 <h2>Click on icons if you want to connect with me!</h2>
                 <div className='show-mail-contact'>
                     <p>
-                    <img onClick={showProtonMailContact} data-type='proton' className='contact-proton-image' src='https://pic.clubic.com/v1/images/2009112/raw' alt='gif'>
+                    <img onClick={showProtonMailContact} data-type='proton' className='contact-proton-image' src='https://pic.clubic.com/v1/images/2009112/raw' alt='img'>
                     </img>
                     <strong>
                     {   displayProtonMailContact.length ?
@@ -45,7 +45,7 @@ const   Contact = () => {
                 </div>
                 <div className='show-mail-contact'>
                     <p>
-                    <img onClick={showProtonMailContact} data-type='linkedin' className='contact-proton-image' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png'>
+                    <img onClick={showProtonMailContact} data-type='linkedin' className='contact-proton-image' alt='img' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png'>
                     </img>
                     <strong>
                     {   displayLinkedinPathContact.length ?
